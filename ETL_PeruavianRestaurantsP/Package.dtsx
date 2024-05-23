@@ -1,0 +1,3675 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/14/2024 2:02:39 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ADONOSKYLP"
+  DTS:CreatorName="ADONOSKYLP\hp"
+  DTS:DTSID="{BCAC12D9-6CE2-42A7-B59C-C3B02F9AE026}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="10250"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="101"
+  DTS:VersionGUID="{5A2EB90D-1E6D-486F-9A29-9FE10E28ED4A}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0F304238-648D-408F-A1F9-9D1BCF30663E}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\hp\OneDrive\IPAE\CICLO VI\Lab VI - TESIS\Peruvian Food Review\data\data\restaurants.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{E25AB2BD-F66E-4F45-B6A2-3C523DAF86B2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{D5EEF298-4337-43AA-B148-080EDED0F29A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tag"
+              DTS:DTSID="{78ED1D26-C451-4EB3-BA9C-367F62EEA9DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="x"
+              DTS:DTSID="{7C750B5C-682B-4226-B019-9CD910CC49C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="y"
+              DTS:DTSID="{7ABBD254-C145-4C71-8D1D-6C18A1257EE4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="district"
+              DTS:DTSID="{007D4885-CB81-4DF6-A113-53A0FA74CF4B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IDDIST"
+              DTS:DTSID="{7E2F864A-A5BF-410D-ADF7-EAE33C7E7BC5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="direction"
+              DTS:DTSID="{2D77044F-907C-4640-AA64-020562949C3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="stars"
+              DTS:DTSID="{8E5FD694-300A-45D9-94E9-01012F86123E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="n_reviews"
+              DTS:DTSID="{2726838F-C069-4068-804F-5D11BCEBB1B1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="min_price"
+              DTS:DTSID="{D3B409EE-D1CB-44F0-A974-501B42FC93C8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="max_price"
+              DTS:DTSID="{5F62C8E1-4DA8-4C22-B064-6AFA748DC0D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="platform"
+              DTS:DTSID="{4A600B67-C362-4D84-8262-45B319E38C45}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ADONOSKYLP.PeruvianRestaurantsReviews]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{12E9159C-A9C5-42D6-A9F3-CC9D54AF5101}"
+      DTS:ObjectName="ADONOSKYLP.PeruvianRestaurantsReviews">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=ADONOSKYLP;Initial Catalog=PeruvianRestaurantsReviews;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{12E9159C-A9C5-42D6-A9F3-CC9D54AF5101}ADONOSKYLP.PeruvianRestaurantsReviews;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[AdonoskyLP.PeruvianRestaurantsReviewsOG]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E29C8840-681B-46F9-9E16-BC0FC5E38625}"
+      DTS:ObjectName="AdonoskyLP.PeruvianRestaurantsReviewsOG">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=AdonoskyLP;Initial Catalog=PeruvianRestaurantsReviewsOG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{E29C8840-681B-46F9-9E16-BC0FC5E38625}AdonoskyLP.PeruvianRestaurantsReviewsOG;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CSV-Restaurant]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{73C68F45-8C32-4C16-8787-464A243EECFF}"
+      DTS:ObjectName="CSV-Restaurant">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\hp\OneDrive\IPAE\CICLO VI\Lab VI - TESIS\Peruvian Food Review\data\data\restaurants.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{9E728847-B33B-478B-80AF-0386FCEE9BBD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="350"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{6F581D6C-7686-4643-9524-785449AB0EA7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="350"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tag"
+              DTS:DTSID="{6F652D62-550B-4D04-9A95-940C88AB3740}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="x"
+              DTS:DTSID="{DE7A50DD-7A25-4326-BB67-8B9052DC5D32}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="y"
+              DTS:DTSID="{7BF0DEC9-79C8-4E56-9E11-DDFABFC951C8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="350"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="district"
+              DTS:DTSID="{3092B5F8-4F2A-45E3-99FE-9BB69DE9DEFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IDDIST"
+              DTS:DTSID="{F8128362-DA0A-4C7B-A2BA-D91A4BFBDA62}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="450"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="direction"
+              DTS:DTSID="{9BADE276-C31D-4052-ADC5-09917FA3CFE1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="stars"
+              DTS:DTSID="{BD9C2ACB-A0E7-4CCD-A94C-F1C996291E69}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="n_reviews"
+              DTS:DTSID="{F5C9E804-11AA-4CC9-9E45-96A6E1AF0C10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="min_price"
+              DTS:DTSID="{1679E672-EAEF-4355-93F6-9BDEAB0C2470}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="max_price"
+              DTS:DTSID="{E65213C4-67FB-45EF-A304-4EE043E9FA80}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="150"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="platform"
+              DTS:DTSID="{C8111BDD-8EB4-4672-812A-27EF36718AC5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CSV-Sentiments]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D606F1AA-8D53-48CC-A47C-3288C8BE58D6}"
+      DTS:ObjectName="CSV-Sentiments">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\hp\Downloads\archive\data\data\model.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id_review"
+              DTS:DTSID="{667D340A-4223-4D8F-AF5D-AED486180027}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="anger"
+              DTS:DTSID="{39FC78A6-563F-4071-948F-207099B3DB2C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="anticipation"
+              DTS:DTSID="{82CD6E2F-7688-4067-B280-D7767D2EF457}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="disgust"
+              DTS:DTSID="{C6D1D01A-0B04-43C5-BF77-B479AF85A1B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fear"
+              DTS:DTSID="{583B07CE-DB5D-427D-9756-FCE74E277360}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="joy"
+              DTS:DTSID="{70EBB5C9-AA4A-437D-8369-ADFF91AF2D15}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="sadness"
+              DTS:DTSID="{C76825B3-5165-480E-928B-97CA5055B42F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="surprise"
+              DTS:DTSID="{CA4F712B-7650-4C1A-B423-29E9D3C73EDF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="trust"
+              DTS:DTSID="{781B9C03-7BDC-4783-A520-80ACC49B7932}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="negative"
+              DTS:DTSID="{463CBBCE-94FD-4268-9E56-AC2A5BD9ABA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="positive"
+              DTS:DTSID="{3E5C70F4-511A-46EA-8112-5F766F407E5E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="stars_1"
+              DTS:DTSID="{D26C8929-9240-4733-BB53-1A85463940DD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="stars_2"
+              DTS:DTSID="{556B0B26-648E-4360-86C1-A9DBB41943FE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="stars_3"
+              DTS:DTSID="{6DAEBCD1-8F3B-45B1-BE04-BDA7A6AD9606}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="stars_4"
+              DTS:DTSID="{1AD25E82-4AA5-4321-BE9F-12E258469937}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="stars_5"
+              DTS:DTSID="{F0840B2C-7EDF-4141-8CEB-15976143C13C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\FactsReviews"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F5319F51-D8F5-472D-8D8A-CD47FFFF98D7}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FactsReviews"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\FactsReviews\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[factReview]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FactsReviews\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ADONOSKYLP.PeruvianRestaurantsReviews]"
+                  connectionManagerRefId="Package.ConnectionManagers[ADONOSKYLP.PeruvianRestaurantsReviews]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id_review]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="id_review"
+                      externalMetadataColumnId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id_review]"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[id_review]" />
+                    <inputColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[score]"
+                      cachedDataType="r8"
+                      cachedName="score"
+                      externalMetadataColumnId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[score]"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[score]" />
+                    <inputColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]" />
+                    <inputColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IDDIST]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IDDIST"
+                      externalMetadataColumnId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDDIST]"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDDIST]" />
+                    <inputColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Expr1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Expr1"
+                      externalMetadataColumnId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Expr1]"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[Expr1]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id_fact]"
+                      dataType="i4"
+                      name="id_fact" />
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id_review]"
+                      dataType="wstr"
+                      length="255"
+                      name="id_review" />
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[score]"
+                      dataType="r8"
+                      name="score" />
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[platform]"
+                      dataType="wstr"
+                      length="255"
+                      name="platform" />
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDDIST]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IDDIST" />
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Expr1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Expr1" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FactsReviews\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FactsReviews\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FactsReviews\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FactsReviews\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        reviews.id_review, reviews.score, restaurants.id, restaurants.IDDIST, restaurants.platform, model.id_review AS Expr1
+FROM            model CROSS JOIN
+                         restaurants CROSS JOIN
+                         reviews</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FactsReviews\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[AdonoskyLP.PeruvianRestaurantsReviewsOG]"
+                  connectionManagerRefId="Package.ConnectionManagers[AdonoskyLP.PeruvianRestaurantsReviewsOG]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[id_review]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id_review]"
+                      length="255"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[id_review]"
+                      name="id_review"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[score]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[score]"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[score]"
+                      name="score"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                      length="50"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDDIST]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDDIST]"
+                      length="50"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDDIST]"
+                      name="IDDIST"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[Expr1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Expr1]"
+                      length="50"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].Columns[Expr1]"
+                      name="Expr1"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id_review]"
+                      dataType="wstr"
+                      length="255"
+                      name="id_review" />
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[score]"
+                      dataType="r8"
+                      name="score" />
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[platform]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="platform" />
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDDIST]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IDDIST" />
+                    <externalMetadataColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Expr1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Expr1" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id_review]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id_review]"
+                      name="id_review" />
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[score]"
+                      dataType="r8"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[score]"
+                      name="score" />
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDDIST]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDDIST]"
+                      name="IDDIST" />
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Expr1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Expr1]"
+                      name="Expr1" />
+                    <outputColumn
+                      refId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\FactsReviews.Paths[OLE DB Source Output]"
+              endId="Package\FactsReviews\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\FactsReviews\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Locations"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{1A4DBD06-0925-47E2-A080-1E8FF4AED6E1}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Locations"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Locations\CSV-Location"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="CSV-Location"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[restaurants]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        model.id_review, restaurants.id, restaurants.name, reviews.id_review AS Expr1, reviews.score, model.stars_1, model.stars_2, model.stars_3, model.stars_4, model.stars_5, restaurants.direction
+FROM            model CROSS JOIN
+                         restaurants CROSS JOIN
+                         reviews</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Locations\CSV-Location.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[AdonoskyLP.PeruvianRestaurantsReviewsOG]"
+                  connectionManagerRefId="Package.ConnectionManagers[AdonoskyLP.PeruvianRestaurantsReviewsOG]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                      length="50"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].Columns[district]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[district]"
+                      length="250"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].Columns[district]"
+                      name="district"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].Columns[y]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[y]"
+                      length="50"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].Columns[y]"
+                      name="y"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].Columns[x]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[x]"
+                      length="50"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].Columns[x]"
+                      name="x"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[direction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="350"
+                      name="direction" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[tag]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="tag" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[x]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="x" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[y]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="y" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[district]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="district" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[IDDIST]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IDDIST" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[stars]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stars" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[n_reviews]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="n_reviews" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[min_price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="min_price" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[max_price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="max_price" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].ExternalColumns[platform]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="platform" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output].Columns[district]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output].Columns[district]"
+                      name="district" />
+                    <outputColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output].Columns[y]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output].Columns[y]"
+                      name="y" />
+                    <outputColumn
+                      refId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output].Columns[x]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Error Output].Columns[x]"
+                      name="x" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Locations\dimLocation"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="dimLocation"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dimLocation]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Locations\dimLocation.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ADONOSKYLP.PeruvianRestaurantsReviews]"
+                  connectionManagerRefId="Package.ConnectionManagers[ADONOSKYLP.PeruvianRestaurantsReviews]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input].Columns[district]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="district"
+                      externalMetadataColumnId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input].ExternalColumns[district]"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].Columns[district]" />
+                    <inputColumn
+                      refId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input].ExternalColumns[id_location]"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input].Columns[x]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="x"
+                      externalMetadataColumnId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input].ExternalColumns[longitude]"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].Columns[x]" />
+                    <inputColumn
+                      refId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input].Columns[y]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="y"
+                      externalMetadataColumnId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input].ExternalColumns[latitude]"
+                      lineageId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output].Columns[y]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input].ExternalColumns[id_location]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="id_location" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input].ExternalColumns[district]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="district" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input].ExternalColumns[longitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="longitude" />
+                    <externalMetadataColumn
+                      refId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input].ExternalColumns[latitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="latitude" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Locations\dimLocation.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Locations\dimLocation.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Locations\dimLocation.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Locations\dimLocation.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Locations\dimLocation.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Locations.Paths[OLE DB Source Output]"
+              endId="Package\Locations\dimLocation.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Locations\CSV-Location.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Restaurants"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{3B1D3A97-360C-43FA-8A47-06951425B317}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Restaurants"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Restaurants\CSV-Restaurants"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="10250"
+              name="CSV-Restaurants"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Restaurants\CSV-Restaurants.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CSV-Restaurant]"
+                  connectionManagerRefId="Package.ConnectionManagers[CSV-Restaurant]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      length="50"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[name]"
+                      length="350"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[name]"
+                      name="name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[tag]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[tag]"
+                      length="350"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[tag]"
+                      name="tag"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[x]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[x]"
+                      length="50"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[x]"
+                      name="x"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[y]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[y]"
+                      length="50"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[y]"
+                      name="y"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[district]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[district]"
+                      length="350"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[district]"
+                      name="district"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[direction]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[direction]"
+                      length="450"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[direction]"
+                      name="direction"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[stars]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[stars]"
+                      length="50"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[stars]"
+                      name="stars"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[n_reviews]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[n_reviews]"
+                      length="50"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[n_reviews]"
+                      name="n_reviews"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[platform]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[platform]"
+                      length="150"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[platform]"
+                      name="platform"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="350"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[tag]"
+                      codePage="1252"
+                      dataType="str"
+                      length="350"
+                      name="tag" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[x]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="x" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[y]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="y" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[district]"
+                      codePage="1252"
+                      dataType="str"
+                      length="350"
+                      name="district" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[IDDIST]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IDDIST" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[direction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="450"
+                      name="direction" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[stars]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stars" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[n_reviews]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="n_reviews" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[min_price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="min_price" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[max_price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="max_price" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].ExternalColumns[platform]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="platform" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Restaurants\dimRestaurant"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="dimRestaurant"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[dimRestaurant]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Restaurants\dimRestaurant.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ADONOSKYLP.PeruvianRestaurantsReviews]"
+                  connectionManagerRefId="Package.ConnectionManagers[ADONOSKYLP.PeruvianRestaurantsReviews]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].Columns[name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="350"
+                      cachedName="name"
+                      externalMetadataColumnId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[name]"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[name]" />
+                    <inputColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].Columns[tag]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="350"
+                      cachedName="tag"
+                      externalMetadataColumnId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[tag]"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[tag]" />
+                    <inputColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].Columns[y]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="y"
+                      externalMetadataColumnId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[y]"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[y]" />
+                    <inputColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].Columns[district]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="350"
+                      cachedName="district"
+                      externalMetadataColumnId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[district]"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[district]" />
+                    <inputColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].Columns[direction]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="450"
+                      cachedName="direction"
+                      externalMetadataColumnId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[direction]"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[direction]" />
+                    <inputColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].Columns[stars]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="stars"
+                      externalMetadataColumnId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[stars]"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[stars]" />
+                    <inputColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].Columns[n_reviews]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="n_reviews"
+                      externalMetadataColumnId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[n_reviews]"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[n_reviews]" />
+                    <inputColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].Columns[platform]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="150"
+                      cachedName="platform"
+                      externalMetadataColumnId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[platform]"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[platform]" />
+                    <inputColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].Columns[x]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="x"
+                      externalMetadataColumnId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[x]"
+                      lineageId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output].Columns[x]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="350"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[tag]"
+                      codePage="1252"
+                      dataType="str"
+                      length="350"
+                      name="tag" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[y]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="y" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[district]"
+                      codePage="1252"
+                      dataType="str"
+                      length="350"
+                      name="district" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[direction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="450"
+                      name="direction" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[stars]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stars" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[n_reviews]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="n_reviews" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[platform]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="platform" />
+                    <externalMetadataColumn
+                      refId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input].ExternalColumns[x]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="x" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Restaurants\dimRestaurant.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Restaurants\dimRestaurant.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Restaurants\dimRestaurant.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Restaurants\dimRestaurant.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Restaurants\dimRestaurant.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Restaurants.Paths[Flat File Source Output]"
+              endId="Package\Restaurants\dimRestaurant.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Restaurants\CSV-Restaurants.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Reviews"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{CB9115B7-DD93-4499-A924-F542B9F1056C}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Reviews"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Reviews\CSV-Reviews"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="CSV-Reviews"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[reviews]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Reviews\CSV-Reviews.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[AdonoskyLP.PeruvianRestaurantsReviewsOG]"
+                  connectionManagerRefId="Package.ConnectionManagers[AdonoskyLP.PeruvianRestaurantsReviewsOG]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].Columns[id_review]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[id_review]"
+                      length="255"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].Columns[id_review]"
+                      name="id_review"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].Columns[review]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[review]"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].Columns[review]"
+                      name="review"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].Columns[title]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[title]"
+                      length="255"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].Columns[title]"
+                      name="title"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].Columns[platform]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[platform]"
+                      length="255"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].Columns[platform]"
+                      name="platform"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[id_review]"
+                      dataType="wstr"
+                      length="255"
+                      name="id_review" />
+                    <externalMetadataColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[review]"
+                      dataType="nText"
+                      name="review" />
+                    <externalMetadataColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[title]"
+                      dataType="wstr"
+                      length="255"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[score]"
+                      dataType="r8"
+                      name="score" />
+                    <externalMetadataColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[likes]"
+                      dataType="r8"
+                      name="likes" />
+                    <externalMetadataColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[id_nick]"
+                      dataType="wstr"
+                      length="255"
+                      name="id_nick" />
+                    <externalMetadataColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[service]"
+                      dataType="r8"
+                      name="service" />
+                    <externalMetadataColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[date]"
+                      dataType="wstr"
+                      length="255"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].ExternalColumns[platform]"
+                      dataType="wstr"
+                      length="255"
+                      name="platform" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output].Columns[id_review]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output].Columns[id_review]"
+                      name="id_review" />
+                    <outputColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output].Columns[review]"
+                      dataType="nText"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output].Columns[review]"
+                      name="review" />
+                    <outputColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output].Columns[title]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output].Columns[title]"
+                      name="title" />
+                    <outputColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output].Columns[platform]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output].Columns[platform]"
+                      name="platform" />
+                    <outputColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Reviews\dimReview"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="dimReview"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dimReview]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Reviews\dimReview.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ADONOSKYLP.PeruvianRestaurantsReviews]"
+                  connectionManagerRefId="Package.ConnectionManagers[ADONOSKYLP.PeruvianRestaurantsReviews]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input].Columns[id_review]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="id_review"
+                      externalMetadataColumnId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input].ExternalColumns[id_review]"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].Columns[id_review]" />
+                    <inputColumn
+                      refId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input].Columns[review]"
+                      cachedDataType="nText"
+                      cachedName="review"
+                      externalMetadataColumnId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input].ExternalColumns[review]"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].Columns[review]" />
+                    <inputColumn
+                      refId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input].Columns[title]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="title"
+                      externalMetadataColumnId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].Columns[title]" />
+                    <inputColumn
+                      refId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input].Columns[platform]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="platform"
+                      externalMetadataColumnId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input].ExternalColumns[platform]"
+                      lineageId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output].Columns[platform]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input].ExternalColumns[id_review]"
+                      dataType="wstr"
+                      length="255"
+                      name="id_review" />
+                    <externalMetadataColumn
+                      refId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input].ExternalColumns[review]"
+                      dataType="nText"
+                      name="review" />
+                    <externalMetadataColumn
+                      refId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                      dataType="wstr"
+                      length="255"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input].ExternalColumns[platform]"
+                      dataType="wstr"
+                      length="255"
+                      name="platform" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Reviews\dimReview.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Reviews\dimReview.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Reviews\dimReview.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Reviews\dimReview.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Reviews\dimReview.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Reviews.Paths[OLE DB Source Output]"
+              endId="Package\Reviews\dimReview.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Reviews\CSV-Reviews.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sentiments"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{A9B718C6-DBE5-4E6A-9105-D6AE2578C5A8}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sentiments"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Sentiments\CSV-Sentiments"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="10250"
+              name="CSV-Sentiments"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Sentiments\CSV-Sentiments.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CSV-Sentiments]"
+                  connectionManagerRefId="Package.ConnectionManagers[CSV-Sentiments]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[id_review]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[id_review]"
+                      length="100"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[id_review]"
+                      name="id_review"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[anger]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[anger]"
+                      length="100"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[anger]"
+                      name="anger"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[anticipation]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[anticipation]"
+                      length="100"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[anticipation]"
+                      name="anticipation"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[disgust]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[disgust]"
+                      length="100"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[disgust]"
+                      name="disgust"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[fear]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[fear]"
+                      length="100"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[fear]"
+                      name="fear"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[joy]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[joy]"
+                      length="100"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[joy]"
+                      name="joy"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[sadness]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[sadness]"
+                      length="100"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[sadness]"
+                      name="sadness"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[surprise]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[surprise]"
+                      length="100"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[surprise]"
+                      name="surprise"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[trust]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[trust]"
+                      length="100"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[trust]"
+                      name="trust"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[negative]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[negative]"
+                      length="100"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[negative]"
+                      name="negative"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[positive]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[positive]"
+                      length="100"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[positive]"
+                      name="positive"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[id_review]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="id_review" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[anger]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="anger" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[anticipation]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="anticipation" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[disgust]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="disgust" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[fear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="fear" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[joy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="joy" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[sadness]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="sadness" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[surprise]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="surprise" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[trust]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="trust" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[negative]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="negative" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[positive]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="positive" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[stars_1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="stars_1" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[stars_2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="stars_2" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[stars_3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="stars_3" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[stars_4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="stars_4" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].ExternalColumns[stars_5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="stars_5" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Sentiments\dimSentiment"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="dimSentiment"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dimSentiment]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Sentiments\dimSentiment.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ADONOSKYLP.PeruvianRestaurantsReviews]"
+                  connectionManagerRefId="Package.ConnectionManagers[ADONOSKYLP.PeruvianRestaurantsReviews]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].Columns[id_review]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="id_review"
+                      externalMetadataColumnId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[id_review]"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[id_review]" />
+                    <inputColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].Columns[anger]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="anger"
+                      externalMetadataColumnId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[anger]"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[anger]" />
+                    <inputColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].Columns[anticipation]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="anticipation"
+                      externalMetadataColumnId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[anticipation]"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[anticipation]" />
+                    <inputColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].Columns[disgust]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="disgust"
+                      externalMetadataColumnId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[disgust]"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[disgust]" />
+                    <inputColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].Columns[fear]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="fear"
+                      externalMetadataColumnId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[fear]"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[fear]" />
+                    <inputColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].Columns[joy]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="joy"
+                      externalMetadataColumnId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[joy]"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[joy]" />
+                    <inputColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].Columns[sadness]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="sadness"
+                      externalMetadataColumnId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[sadness]"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[sadness]" />
+                    <inputColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].Columns[surprise]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="surprise"
+                      externalMetadataColumnId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[surprise]"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[surprise]" />
+                    <inputColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].Columns[trust]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="trust"
+                      externalMetadataColumnId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[trust]"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[trust]" />
+                    <inputColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].Columns[negative]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="negative"
+                      externalMetadataColumnId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[negative]"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[negative]" />
+                    <inputColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].Columns[positive]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="positive"
+                      externalMetadataColumnId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[positive]"
+                      lineageId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output].Columns[positive]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[id_review]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="id_review" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[anger]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="anger" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[anticipation]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="anticipation" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[disgust]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="disgust" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[fear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="fear" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[joy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="joy" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[sadness]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="sadness" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[surprise]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="surprise" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[trust]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="trust" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[negative]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="negative" />
+                    <externalMetadataColumn
+                      refId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input].ExternalColumns[positive]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="positive" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Sentiments\dimSentiment.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sentiments\dimSentiment.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sentiments\dimSentiment.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sentiments\dimSentiment.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sentiments\dimSentiment.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Sentiments.Paths[Flat File Source Output]"
+              endId="Package\Sentiments\dimSentiment.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Sentiments\CSV-Sentiments.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:Disabled="True"
+      DTS:DTSID="{31A19691-5841-45D8-9799-679AB24667EE}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{12E9159C-A9C5-42D6-A9F3-CC9D54AF5101}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStatementSource="DELETE FROM factReview;&#xA;DELETE FROM dimRestaurant;&#xA;DELETE FROM dimSentiment;&#xA;DELETE FROM dimReview;&#xA;DELETE FROM dimLocation;"
+          SQLTask:ResultType="ResultSetType_SingleRow"
+          SQLTask:TypeConversionMode="None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{E3946E14-6187-42FC-B076-F92D01A3E15C}"
+      DTS:From="Package\Tarea Ejecutar SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Restaurants" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{09F9D6C9-CFB2-479B-B37D-EFB1DAB4AB68}"
+      DTS:From="Package\Tarea Ejecutar SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\Reviews" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{36238F30-6A1C-4562-83E1-804D086A0343}"
+      DTS:From="Package\Tarea Ejecutar SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\Sentiments" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{CC9DA098-369E-4ED0-8B84-2B2A673C6A51}"
+      DTS:From="Package\Tarea Ejecutar SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 3"
+      DTS:To="Package\Locations" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{38907080-815F-4C4E-837F-32F405164C9D}"
+      DTS:From="Package\Restaurants"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 4"
+      DTS:To="Package\FactsReviews" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{183AB0F4-5DB2-4F98-BC23-7BD488F251D1}"
+      DTS:From="Package\Reviews"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 5"
+      DTS:To="Package\FactsReviews" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{7074EB8E-9E01-41DD-8F57-30E3A444F71D}"
+      DTS:From="Package\Sentiments"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 6"
+      DTS:To="Package\FactsReviews" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{61D39200-2D56-40D5-8427-9D7D8875B629}"
+      DTS:From="Package\Locations"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 7"
+      DTS:To="Package\FactsReviews" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Restaurants"
+          TopLeft="44,196" />
+        <NodeLayout
+          Size="148,42"
+          Id="Package\FactsReviews"
+          TopLeft="289,313" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Sentiments"
+          TopLeft="383,192" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Tarea Ejecutar SQL"
+          TopLeft="270,63" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Reviews"
+          TopLeft="227,195" />
+        <NodeLayout
+          Size="126,42"
+          Id="Package\Locations"
+          TopLeft="542,191" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="307.6,105">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-194.6,91"
+              Start="0,0"
+              End="-194.6,83.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.2420382165605" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.2420382165605"
+                    Point2="0,27.2420382165605"
+                    Point3="-4,27.2420382165605" />
+                  <mssgle:LineSegment
+                    End="-190.6,27.2420382165605" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-190.6,27.2420382165605"
+                    Point2="-194.6,27.2420382165605"
+                    Point3="-194.6,31.2420382165605" />
+                  <mssgle:LineSegment
+                    End="-194.6,83.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="341.2,105">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-53.7,90"
+              Start="0,0"
+              End="-53.7,82.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.251256281407" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.251256281407"
+                    Point2="0,40.251256281407"
+                    Point3="-4,40.251256281407" />
+                  <mssgle:LineSegment
+                    End="-49.7,40.251256281407" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-49.7,40.251256281407"
+                    Point2="-53.7,40.251256281407"
+                    Point3="-53.7,44.251256281407" />
+                  <mssgle:LineSegment
+                    End="-53.7,82.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="374.8,105">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75.2,87"
+              Start="0,0"
+              End="75.2,79.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.9095477386935" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.9095477386935"
+                    Point2="0,38.9095477386935"
+                    Point3="4,38.9095477386935" />
+                  <mssgle:LineSegment
+                    End="71.2,38.9095477386935" />
+                  <mssgle:CubicBezierSegment
+                    Point1="71.2,38.9095477386935"
+                    Point2="75.2,38.9095477386935"
+                    Point3="75.2,42.9095477386935" />
+                  <mssgle:LineSegment
+                    End="75.2,79.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 3]"
+          TopLeft="408.4,105">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="196.6,86"
+              Start="0,0"
+              End="196.6,78.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.7452229299363" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.7452229299363"
+                    Point2="0,25.7452229299363"
+                    Point3="4,25.7452229299363" />
+                  <mssgle:LineSegment
+                    End="192.6,25.7452229299363" />
+                  <mssgle:CubicBezierSegment
+                    Point1="192.6,25.7452229299363"
+                    Point2="196.6,25.7452229299363"
+                    Point3="196.6,29.7452229299363" />
+                  <mssgle:LineSegment
+                    End="196.6,78.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 4]"
+          TopLeft="113,238">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="208,75"
+              Start="0,0"
+              End="208,67.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.3584905660377" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48.3584905660377"
+                    Point2="0,52.3584905660377"
+                    Point3="4,52.3584905660377" />
+                  <mssgle:LineSegment
+                    End="204,52.3584905660377" />
+                  <mssgle:CubicBezierSegment
+                    Point1="204,52.3584905660377"
+                    Point2="208,52.3584905660377"
+                    Point3="208,56.3584905660377" />
+                  <mssgle:LineSegment
+                    End="208,67.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 5]"
+          TopLeft="287.5,237">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="61.5,76"
+              Start="0,0"
+              End="61.5,68.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.9701492537313" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.9701492537313"
+                    Point2="0,41.9701492537313"
+                    Point3="4,41.9701492537313" />
+                  <mssgle:LineSegment
+                    End="57.5,41.9701492537313" />
+                  <mssgle:CubicBezierSegment
+                    Point1="57.5,41.9701492537313"
+                    Point2="61.5,41.9701492537313"
+                    Point3="61.5,45.9701492537313" />
+                  <mssgle:LineSegment
+                    End="61.5,68.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 6]"
+          TopLeft="450,234">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-73,79"
+              Start="0,0"
+              End="-73,71.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.6268656716418" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.6268656716418"
+                    Point2="0,43.6268656716418"
+                    Point3="-4,43.6268656716418" />
+                  <mssgle:LineSegment
+                    End="-69,43.6268656716418" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-69,43.6268656716418"
+                    Point2="-73,43.6268656716418"
+                    Point3="-73,47.6268656716418" />
+                  <mssgle:LineSegment
+                    End="-73,71.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 7]"
+          TopLeft="605,233">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-200,80"
+              Start="0,0"
+              End="-200,72.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.8490566037736" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,51.8490566037736"
+                    Point2="0,55.8490566037736"
+                    Point3="-4,55.8490566037736" />
+                  <mssgle:LineSegment
+                    End="-196,55.8490566037736" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-196,55.8490566037736"
+                    Point2="-200,55.8490566037736"
+                    Point3="-200,59.8490566037736" />
+                  <mssgle:LineSegment
+                    End="-200,72.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Restaurants">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Restaurants\CSV-Restaurants"
+          TopLeft="263,86" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Restaurants\dimRestaurant"
+          TopLeft="273,190" />
+        <EdgeLayout
+          Id="Package\Restaurants.Paths[Flat File Source Output]"
+          TopLeft="347,128">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62"
+              Start="0,0"
+              End="0,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\FactsReviews">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\FactsReviews\OLE DB Source"
+          TopLeft="273,60" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\FactsReviews\OLE DB Destination"
+          TopLeft="268,189" />
+        <EdgeLayout
+          Id="Package\FactsReviews.Paths[OLE DB Source Output]"
+          TopLeft="354,102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,87"
+              Start="0,0"
+              End="0,79.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,79.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Sentiments">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Sentiments\dimSentiment"
+          TopLeft="272,166" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Sentiments\CSV-Sentiments"
+          TopLeft="261,45" />
+        <EdgeLayout
+          Id="Package\Sentiments.Paths[Flat File Source Output]"
+          TopLeft="343,87">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,79"
+              Start="0,0"
+              End="0,71.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sentiments\dimSentiment">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Reviews">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Reviews\CSV-Reviews"
+          TopLeft="270,48" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Reviews\dimReview"
+          TopLeft="281,177" />
+        <EdgeLayout
+          Id="Package\Reviews.Paths[OLE DB Source Output]"
+          TopLeft="345.5,90">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,87"
+              Start="0,0"
+              End="0,79.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,79.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Reviews\dimReview">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Reviews\CSV-Reviews">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Locations">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Locations\CSV-Location"
+          TopLeft="297,84" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Locations\dimLocation"
+          TopLeft="309,210" />
+        <EdgeLayout
+          Id="Package\Locations.Paths[OLE DB Source Output]"
+          TopLeft="374.25,126">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,84"
+              Start="0,0"
+              End="0,76.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Locations\CSV-Location">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Locations\dimLocation">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FactsReviews\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FactsReviews\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
